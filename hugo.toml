@@ -1,0 +1,8 @@
+baseURL = 'https://Sirsy01.github.io/'
+languageCode = 'zh-cn'
+title = '我的个人主页'
+theme = 'PaperMod'
+
+[params]
+    math = true # 全局开启数学公式支持
+    showCodeCopyButtons = true # 显示代码复制按钮
