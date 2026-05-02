@@ -29,4 +29,19 @@ math: true             # 如果有公式，确保开启这个
 这里开始写正文...
 ```
 
-之后就是打包发送到github发布，但只要我们把draft设置为true
+之后就是打包发送到github发布，但只要我们把draft设置为true，他就不会被发布。但别人依然可以通过直接访问github的contents/posts/来找到所有发布或者未发布的笔记
+
+
+```
+# 只把这一篇文章装进快递箱
+git add content/posts/quantum-optics-intro.md
+如果是git add . 则是把所有的改动都加到github上
+
+# 封箱
+git commit -m "只发布这一篇文章"
+
+# 发送
+git push
+```
+
+另外是可以在terminal中输入hugo server -D来看所有的草稿内容的
